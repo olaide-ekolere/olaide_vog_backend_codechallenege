@@ -7,6 +7,7 @@
   <ItemGroup>
     <Folder Include="Interfaces\" />
     <Folder Include="Interfaces\Repositories\" />
+    <Folder Include="Interfaces\Services\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\VogCodeChallenge.Domain\VogCodeChallenge.Domain.csproj" />
