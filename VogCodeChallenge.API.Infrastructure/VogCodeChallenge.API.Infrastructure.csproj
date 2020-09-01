@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+    <Folder Include="Services\" />
+    <Folder Include="Contexts\" />
+    <Folder Include="Seed\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VogCodeChallenge.API.Application\VogCodeChallenge.API.Application.csproj" />
+    <ProjectReference Include="..\VogCodeChallenge.API.Domain\VogCodeChallenge.API.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="2.2.3" />
+  </ItemGroup>
+</Project>

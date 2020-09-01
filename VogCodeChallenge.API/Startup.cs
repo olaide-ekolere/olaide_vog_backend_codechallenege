@@ -10,6 +10,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
+using VogCodeChallenge.API.Infrastructure;
+
 namespace VogCodeChallenge.API
 {
     public class Startup
@@ -31,7 +33,7 @@ namespace VogCodeChallenge.API
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
+            services.AddPersistenceInfrastructure(Configuration);
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
