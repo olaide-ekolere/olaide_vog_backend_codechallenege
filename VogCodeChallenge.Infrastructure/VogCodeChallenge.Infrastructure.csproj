@@ -8,6 +8,7 @@
     <Folder Include="Repositories\" />
     <Folder Include="Contexts\" />
     <Folder Include="Services\" />
+    <Folder Include="Seed\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\VogCodeChallenge.Domain\VogCodeChallenge.Domain.csproj" />

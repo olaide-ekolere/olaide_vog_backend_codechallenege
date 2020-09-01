@@ -68,12 +68,12 @@ namespace VogCodeChallenge.Infrastructure.Repositories
 
         public IEnumerable<Department> GetAll()
         {
-            return _applicationDbContext.Departments.AsEnumerable();
+            return _applicationDbContext.Departments.AsNoTracking().AsEnumerable();
         }
 
         public IList<Department> ListAll()
         {
-            return _applicationDbContext.Departments.ToList();
+            return _applicationDbContext.Departments.AsNoTracking().ToList();
         }
     }
 }

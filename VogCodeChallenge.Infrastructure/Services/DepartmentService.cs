@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using VogCodeChallenge.Domain.Entities;
 using VogCodeChallenge.Application.Interfaces;
 using VogCodeChallenge.Application.Interfaces.Repositories;
 using VogCodeChallenge.Application.Interfaces.Services;
@@ -14,7 +16,7 @@ namespace VogCodeChallenge.Infrastructure.Services
             _validationDictionary = validationDictionary;
             _departmentRepository = departmentRepository;
         }
-        public IEnumerable<T> GetAll() => _departmentRepository.GetAll();
-        public IList<T> ListAll() => _departmentRepository.ListAll();
+        public IEnumerable<Department> GetAll() => _departmentRepository.GetAll();
+        public IList<Department> ListAll() => _departmentRepository.ListAll();
     }
 }
