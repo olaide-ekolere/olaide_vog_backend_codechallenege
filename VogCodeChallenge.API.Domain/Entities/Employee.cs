@@ -1,7 +1,7 @@
-﻿
+﻿using System;
 using System.ComponentModel.DataAnnotations;
-using VogCodeChallenge.Domain.Common;
-namespace VogCodeChallenge.Domain.Entities
+using VogCodeChallenge.API.Domain.Common;
+namespace VogCodeChallenge.API.Domain.Entities
 {
     public class Employee : BaseEntity
     {

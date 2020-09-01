@@ -2,9 +2,9 @@
 using System.Linq;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
-using VogCodeChallenge.Infrastructure.Contexts;
-using VogCodeChallenge.Domain.Entities;
-namespace VogCodeChallenge.Infrastructure.Seed
+using VogCodeChallenge.API.Infrastructure.Contexts;
+using VogCodeChallenge.API.Domain.Entities;
+namespace VogCodeChallenge.API.Infrastructure.Seed
 {
     public static class TestData
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using VogCodeChallenge.Domain.Entities;
-namespace VogCodeChallenge.Application.Interfaces.Services
+using VogCodeChallenge.API.Domain.Entities;
+namespace VogCodeChallenge.API.Application.Interfaces.Services
 {
     public interface IEmployeeService : IGenericService<Employee>
     {

@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -10,6 +10,6 @@
     <Folder Include="Interfaces\Services\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\VogCodeChallenge.Domain\VogCodeChallenge.Domain.csproj" />
+    <ProjectReference Include="..\VogCodeChallenge.API.Domain\VogCodeChallenge.API.Domain.csproj" />
   </ItemGroup>
 </Project>

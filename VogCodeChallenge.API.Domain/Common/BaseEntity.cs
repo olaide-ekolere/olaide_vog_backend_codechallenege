@@ -1,5 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
-namespace VogCodeChallenge.Domain.Common
+﻿using System;
+using System.ComponentModel.DataAnnotations;
+namespace VogCodeChallenge.API.Domain.Common
 {
     public abstract class BaseEntity
     {

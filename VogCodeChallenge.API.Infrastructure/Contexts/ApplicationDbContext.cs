@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
-using VogCodeChallenge.Domain.Entities;
-namespace VogCodeChallenge.Infrastructure.Contexts
+using VogCodeChallenge.API.Domain.Entities;
+namespace VogCodeChallenge.API.Infrastructure.Contexts
 {
     public class ApplicationDbContext : DbContext
     {

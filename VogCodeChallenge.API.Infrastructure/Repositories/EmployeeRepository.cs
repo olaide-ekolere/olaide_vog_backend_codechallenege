@@ -2,10 +2,10 @@
 using System.Linq;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
-using VogCodeChallenge.Application.Interfaces.Repositories;
-using VogCodeChallenge.Domain.Entities;
-using VogCodeChallenge.Infrastructure.Contexts;
-namespace VogCodeChallenge.Infrastructure.Repositories
+using VogCodeChallenge.API.Application.Interfaces.Repositories;
+using VogCodeChallenge.API.Domain.Entities;
+using VogCodeChallenge.API.Infrastructure.Contexts;
+namespace VogCodeChallenge.API.Infrastructure.Repositories
 {
     public class EmployeeRepository
     {

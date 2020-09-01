@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using VogCodeChallenge.Domain.Entities;
-using VogCodeChallenge.Application.Interfaces;
-using VogCodeChallenge.Application.Interfaces.Repositories;
-using VogCodeChallenge.Application.Interfaces.Services;
-namespace VogCodeChallenge.Infrastructure.Services
+using VogCodeChallenge.API.Domain.Entities;
+using VogCodeChallenge.API.Application.Interfaces;
+using VogCodeChallenge.API.Application.Interfaces.Repositories;
+using VogCodeChallenge.API.Application.Interfaces.Services;
+namespace VogCodeChallenge.API.Infrastructure.Services
 {
     public class EmployeeService
     {

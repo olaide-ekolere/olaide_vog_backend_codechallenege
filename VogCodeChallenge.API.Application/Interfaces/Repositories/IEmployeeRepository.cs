@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using VogCodeChallenge.Domain.Entities;
+using VogCodeChallenge.API.Domain.Entities;
 
-namespace VogCodeChallenge.Application.Interfaces.Repositories
+namespace VogCodeChallenge.API.Application.Interfaces.Repositories
 {
     public interface IEmployeeRepository : IGenericRepository<Employee>
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace VogCodeChallenge.Application.Interfaces
+namespace VogCodeChallenge.API.Application.Interfaces
 {
     public interface IGenericRepository<T> where T : class
     {

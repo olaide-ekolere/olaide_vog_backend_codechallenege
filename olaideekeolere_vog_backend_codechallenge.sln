@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VogCodeChallenge.API", "VogCodeChallenge.API\VogCodeChallenge.API.csproj", "{8CED1275-600D-4E9C-9091-5C1C4964B39E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VogCodeChallenge.Domain", "VogCodeChallenge.Domain\VogCodeChallenge.Domain.csproj", "{D4756CC4-1443-4BBB-8DD5-5E687F7CF58A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VogCodeChallenge.API.Domain", "VogCodeChallenge.API.Domain\VogCodeChallenge.API.Domain.csproj", "{FC2FE03E-CA3B-4800-A2E0-D975FE075A96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VogCodeChallenge.Application", "VogCodeChallenge.Application\VogCodeChallenge.Application.csproj", "{F4CF5AFA-32E0-438A-9905-2381F30F78C4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VogCodeChallenge.API.Application", "VogCodeChallenge.API.Application\VogCodeChallenge.API.Application.csproj", "{D4226879-C3F2-463B-90C4-C61AA25D76DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VogCodeChallenge.Infrastructure", "VogCodeChallenge.Infrastructure\VogCodeChallenge.Infrastructure.csproj", "{CF00E5E7-E5AD-42CF-99BD-7AA94AE17609}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VogCodeChallenge.API.Infrastructure", "VogCodeChallenge.API.Infrastructure\VogCodeChallenge.API.Infrastructure.csproj", "{E4445F7A-996A-4EE3-AAF2-54265CCB157B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,17 +19,17 @@ Global
 		{8CED1275-600D-4E9C-9091-5C1C4964B39E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CED1275-600D-4E9C-9091-5C1C4964B39E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CED1275-600D-4E9C-9091-5C1C4964B39E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D4756CC4-1443-4BBB-8DD5-5E687F7CF58A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D4756CC4-1443-4BBB-8DD5-5E687F7CF58A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D4756CC4-1443-4BBB-8DD5-5E687F7CF58A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D4756CC4-1443-4BBB-8DD5-5E687F7CF58A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F4CF5AFA-32E0-438A-9905-2381F30F78C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F4CF5AFA-32E0-438A-9905-2381F30F78C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F4CF5AFA-32E0-438A-9905-2381F30F78C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F4CF5AFA-32E0-438A-9905-2381F30F78C4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CF00E5E7-E5AD-42CF-99BD-7AA94AE17609}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CF00E5E7-E5AD-42CF-99BD-7AA94AE17609}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CF00E5E7-E5AD-42CF-99BD-7AA94AE17609}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CF00E5E7-E5AD-42CF-99BD-7AA94AE17609}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC2FE03E-CA3B-4800-A2E0-D975FE075A96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC2FE03E-CA3B-4800-A2E0-D975FE075A96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC2FE03E-CA3B-4800-A2E0-D975FE075A96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC2FE03E-CA3B-4800-A2E0-D975FE075A96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4226879-C3F2-463B-90C4-C61AA25D76DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4226879-C3F2-463B-90C4-C61AA25D76DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4226879-C3F2-463B-90C4-C61AA25D76DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4226879-C3F2-463B-90C4-C61AA25D76DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4445F7A-996A-4EE3-AAF2-54265CCB157B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4445F7A-996A-4EE3-AAF2-54265CCB157B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4445F7A-996A-4EE3-AAF2-54265CCB157B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4445F7A-996A-4EE3-AAF2-54265CCB157B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

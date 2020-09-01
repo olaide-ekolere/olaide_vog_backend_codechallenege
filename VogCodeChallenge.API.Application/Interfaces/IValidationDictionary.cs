@@ -1,5 +1,5 @@
 ﻿using System;
-namespace VogCodeChallenge.Application.Interfaces
+namespace VogCodeChallenge.API.Application.Interfaces
 {
     public interface IValidationDictionary
     {
