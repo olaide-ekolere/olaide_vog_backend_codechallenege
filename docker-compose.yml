@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   vogcodechallenge.api:
-    image: ${DOCKER_REGISTRY-}vogcodechallenge
+    image: ${DOCKER_REGISTRY-}olaide_vogcodechallenge
     build:
       context: .
       dockerfile: VogCodeChallenge.API/Dockerfile
