@@ -7,7 +7,7 @@ using VogCodeChallenge.API.Domain.Entities;
 using VogCodeChallenge.API.Infrastructure.Contexts;
 namespace VogCodeChallenge.API.Infrastructure.Repositories
 {
-    public class EmployeeRepository
+    public class EmployeeRepository : IEmployeeRepository
     {
         private readonly ApplicationDbContext _applicationDbContext;
         public EmployeeRepository(ApplicationDbContext applicationDbContext)
@@ -69,26 +69,40 @@ namespace VogCodeChallenge.API.Infrastructure.Repositories
 
         public IEnumerable<Employee> GetAll()
         {
-            return _applicationDbContext.Employees.AsNoTracking().AsEnumerable();
+            return _applicationDbContext.Employees.Include(a => a.Department).AsNoTracking().AsEnumerable();
         }
 
         public IList<Employee> ListAll()
         {
-            return _applicationDbContext.Employees.AsNoTracking().ToList();
+            var enumerable = GetAll();
+            List<Employee> employees = new List<Employee>();
+            foreach (var employee in enumerable)
+            {
+                //remove circular reference
+                employee.Department.Employees = null;
+                employees.Add(employee);
+            }
+            return employees;
         }
 
         public IEnumerable<Employee> GetAllByDepartment(int departmentId)
         {
             return _applicationDbContext.Employees
                     .Where(c => c.DepartmentId == departmentId)
+                    .Include(a => a.Department)
                     .AsNoTracking().AsEnumerable();
         }
 
         public IList<Employee> ListAllByDepartment(int departmentId)
         {
-            return _applicationDbContext.Employees
-                  .Where(c => c.DepartmentId == departmentId)
-                  .AsNoTracking().ToList();
+            var enumerable = GetAllByDepartment(departmentId);
+            List<Employee> employees = new List<Employee>();
+            foreach(var employee in enumerable){
+                //remove circular reference
+                employee.Department.Employees = null;
+                employees.Add(employee);
+            }
+            return employees;
         }
     }
 }

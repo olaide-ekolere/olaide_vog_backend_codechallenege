@@ -12,7 +12,7 @@ namespace VogCodeChallenge.API.Infrastructure
         public static void AddPersistenceInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-                               options.UseInMemoryDatabase("ApplicationDb"));
+                               options.UseInMemoryDatabase("ApplicationDbContext"));
 
             services.AddScoped<IDepartmentRepository, DepartmentRepository>();
             services.AddScoped<IEmployeeRepository, EmployeeRepository>();

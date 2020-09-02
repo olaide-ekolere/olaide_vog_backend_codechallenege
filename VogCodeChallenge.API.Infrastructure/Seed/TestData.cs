@@ -79,6 +79,10 @@ namespace VogCodeChallenge.API.Infrastructure.Seed
                     }
                 };
 
+                foreach (Employee employee in employees)
+                {
+                    applicationDbContext.Employees.Add(employee);
+                }
                 applicationDbContext.SaveChanges();
             }
         }
