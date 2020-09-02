@@ -13,7 +13,7 @@ namespace VogCodeChallenge.API.Controllers.v1
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class EmployeesController : Controller
+    public class EmployeesController : ControllerBase
     {
         IEmployeeService employeeService;
         public EmployeesController(IEmployeeRepository employeeRepository)
