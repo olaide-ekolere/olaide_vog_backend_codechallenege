@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using VogCodeChallenge.API.Infrastructure.Contexts;
 using VogCodeChallenge.API.Domain.Entities;
-namespace VogCodeChallenge.API.Infrastructure.Seed
+namespace VogCodeChallenge.API.UnitTests
 {
-    public static class TestData
+    public static class DbContextExtensions
     {
-        public static void AddTestData(ApplicationDbContext applicationDbContext)
+        public static void Seed(this ApplicationDbContext applicationDbContext)
         {
             if (applicationDbContext.Departments.Any())
             {
@@ -37,7 +37,7 @@ namespace VogCodeChallenge.API.Infrastructure.Seed
                     }
                 };
 
-                foreach(Department department in departments)
+                foreach (Department department in departments)
                 {
                     applicationDbContext.Departments.Add(department);
                 }

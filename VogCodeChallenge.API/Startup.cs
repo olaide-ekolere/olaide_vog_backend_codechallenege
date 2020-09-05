@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using VogCodeChallenge.API.Infrastructure.Contexts;
 
 using VogCodeChallenge.API.Infrastructure;
 
@@ -55,6 +56,8 @@ namespace VogCodeChallenge.API
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
+            //var context = app.ApplicationServices.GetService<ApplicationDbContext>();
+            //TestData.AddTestData(context);
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
